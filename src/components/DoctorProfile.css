@@ -1,0 +1,247 @@
+.doctor-profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out;
+  color: #DBA514;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #DBA514;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  color: #f0c14b;
+  transform: translateX(-4px);
+}
+
+.profile-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: rgba(45, 45, 45, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #DBA514, #f0c14b);
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0 0 1rem;
+  color: #DBA514;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.specialties {
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.experience {
+  color: #DBA514;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(45, 45, 45, 0.7);
+  border-radius: 6px;
+  color: #DBA514;
+  font-weight: 600;
+}
+
+.consultation-options {
+  margin-bottom: 2.5rem;
+}
+
+.consultation-options h2 {
+  margin-bottom: 1.5rem;
+  color: #DBA514;
+  font-size: 1.5rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.option-card {
+  background: rgba(45, 45, 45, 0.7);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: #DBA514;
+}
+
+.option-card h3 {
+  margin: 0 0 1rem;
+  color: #DBA514;
+  font-size: 1.25rem;
+}
+
+.fee {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #DBA514;
+  margin: 0.75rem 0;
+}
+
+.location {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.profile-details {
+  display: grid;
+  gap: 2rem;
+}
+
+.profile-details section {
+  background: rgba(45, 45, 45, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.profile-details section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: #DBA514;
+}
+
+.profile-details h2 {
+  margin: 0 0 1rem;
+  color: #DBA514;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.profile-details h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #DBA514;
+  border-radius: 2px;
+}
+
+.reviews {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.review {
+  border-left: 4px solid #DBA514;
+  padding-left: 1.5rem;
+  transition: all 0.3s ease;
+  color: #e0e0e0;
+}
+
+.review:hover {
+  transform: translateX(4px);
+  border-left-color: #f0c14b;
+}
+
+.review-rating {
+  color: #DBA514;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.reviewer {
+  color: #a0a0a0;
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .doctor-profile {
+    padding: 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-details h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .review {
+    padding-left: 1rem;
+  }
+} 
