@@ -4,6 +4,7 @@ import * as THREE from 'three';
 const Background = () => {
   const containerRef = useRef(null);
 
+  
   useEffect(() => {
     // Scene setup
     const scene = new THREE.Scene();

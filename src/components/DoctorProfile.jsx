@@ -11,6 +11,7 @@ const DoctorProfile = () => {
   React.useEffect(() => {
     const fetchDoctorDetails = async () => {
       try {
+        
         const response = await fetch('https://srijandubey.github.io/campus-api-mock/SRM-C1-25.json');
         const data = await response.json();
         const doctorData = data.find(d => d.id === id);
