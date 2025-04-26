@@ -9,6 +9,7 @@ const DoctorListing = () => {
   const [doctors, setDoctors] = useState([]);
   const [filteredDoctors, setFilteredDoctors] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  
   const [suggestions, setSuggestions] = useState([]);
   const [selectedConsultation, setSelectedConsultation] = useState('');
   const [selectedSpecialties, setSelectedSpecialties] = useState([]);

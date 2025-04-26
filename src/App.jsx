@@ -12,6 +12,7 @@ function App() {
         <Background />
         <div className="content-wrapper">
           <Routes>
+            
             <Route path="/" element={<DoctorListing />} />
             <Route path="/doctor/:id" element={<DoctorProfile />} />
           </Routes>
